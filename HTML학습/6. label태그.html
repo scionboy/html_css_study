@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            /* 보통 실무에선 label을 블록으로 바꿔줌 */
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <label>
+            <!-- input만 하고 옆에 텍스트를 쓰면 텍스트는 input에 속해져있지 않음
+            label로 감싸주면 가능 -->
+            <input type="checkbox">자동 로그인
+        </label>
+        <label>
+            # 이름:<input type="text">
+        </label>
+
+
+        <div>aa</div>
+        <div>ss</div>
+        <div>dd</div>
+        <br><br><br><br>
+
+        <!-- 이렇게 하면 위에 id가 remember인 체크박스에 연동된것 -->
+        <label for="remember">아이기 기억하기</label>
+
+        <select name="drink">
+            <optgroup label="Coffee">
+                <option>Americano</option>
+                <option selected>Caffe Latte</option>
+                <option disabled>Cappuccino (Sold out)</option>            
+            </optgroup>
+
+            <optgroup label="Juice">
+                <option>Orange Juice</option>
+                <option>Lime Juice</option>
+            </optgroup>
+        </select>
+
+    </form>
+
+</body>
+
+</html>

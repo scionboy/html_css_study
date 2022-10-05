@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#">
+        # 이름: <input type="text" value="김철수" name="username" readonly><br>
+        # 비밀번호: <input type="password"><br>
+        # 이메일:<input type="email" placeholder="aaa@bbb.com"><br>
+
+        # 취미:
+        <input type="checkbox"> 게임
+        <input type="checkbox" checked> 축구
+        <input type="checkbox"> 공연관람<br>
+
+        #메일 수신 여부:
+        <!-- 둘중 하나만 하고싶을땐 네임을 같은걸로 해야 배열로 인식해줌 -->
+        <input type="radio" name="mail-verify" checked> 예
+        <input type="radio" name="mail-verify">아니오<br>
+
+        # 주문 수량:
+        <input type="number" value="1" max="10"><br>
+
+        <!-- 사용자가 몰래 서버로 전송할 데이터 -->
+        <input type="hidden" name="abc" value="메롱">
+
+    </form>
+
+</body>
+
+</html>
